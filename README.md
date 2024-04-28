@@ -1,0 +1,1 @@
+This website is my undergraduate project. I do not own any of the pictures used. These pictures were obtained from Pinterest and Google. The sole purpose of this website is to provide users with a rich coffee experience.
