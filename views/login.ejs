@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<%- include('head.ejs') %>
+<body>
+        
+    <%- include('header.ejs') %>
+    
+    <div class="loginContainer">
+        <div class="coffeeMug"></div>
+        <div class="cupCoffee"></div>
+        <div class="canCoffee"></div>
+        <div class="mugCoffee"></div>
+        <form  class="logInForm" >
+        <h2>Login</h2>
+            <input type="email" id="email" placeholder="Email" class="inputBoxes addWid" onblur="checkEmail()" name="email">
+            <input type="password" id="passWord" placeholder="Password" class="inputBoxes addWid" onblur="checkEmail()" name="pass">
+            <div class="goInLine">
+                <input type="submit" placeholder="Password" class="logInSubmit" name="submitBtn">
+                <a href="/signup">Create Account</a>
+            </div>
+        </form>
+    </div>
+
+    
+    <script>
+        function validateForm() {
+          
+          const emailInput = document.getElementById('email');
+          const passwordInput = document.getElementById('passWord');
+        
+         
+          const email = emailInput.value.trim();
+          if (!email || !/\S+@\S+\.\S+/.test(email)) {
+            alert('Please enter a valid email address.');
+            emailInput.focus(); 
+            return false;
+          }
+        
+          
+          const password = passwordInput.value.trim();
+          const minPasswordLength = 8; 
+          if (!password || password.length < minPasswordLength) {
+            alert(`Password must be at least ${minPasswordLength} characters long.`);
+            passwordInput.focus();
+            return false;
+          }
+          return true;
+        }
+        const loginForm = document.querySelector('.logInForm');
+        loginForm.addEventListener('submit', (event) => {
+          if (!validateForm()) {
+            event.preventDefault(); 
+          }
+        });
+        </script>
+        
+
+</body>
+</html> 
