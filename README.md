@@ -19,7 +19,6 @@ A simple e-commerce web application designed to simulate the shopping experience
 
 - **Backend:** Node.js, Express.js
 - **Templating:** EJS
-- **Database:** MariaDB
 - **Frontend:** HTML5, CSS3, JavaScript
 - **Package Manager:** npm
 
