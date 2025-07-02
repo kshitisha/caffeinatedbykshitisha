@@ -1,4 +1,4 @@
-# ☕Caffeinated By Kshitisha- Node.js E-Commerce Web App
+# ☕Caffeinated By Kshitisha- E-Commerce Website
 
 A simple e-commerce web application designed to simulate the shopping experience for a coffee brand. It allows users to browse coffee products, sign up/log in, and manage a shopping cart. The app is built with Node.js, Express.js, EJS templating, and MariaDB.
 
